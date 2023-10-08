@@ -14,9 +14,11 @@ export function ListaDeProductos() {
                         <div className="card-body">
                             <h6 className="card-title">{producto.name}</h6>
                             <br/>
-                            <a href="#" className="btn btn-primary">
-                                Pedir
-                            </a>
+                            <div className="d-grid gap-2">
+                                <button className="btn btn-primary">
+                                    Agregar
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
