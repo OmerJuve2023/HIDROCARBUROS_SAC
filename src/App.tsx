@@ -1,4 +1,3 @@
-import 'bootstrap/dist/css/bootstrap.css';
 import {Header} from "./view/Header.tsx";
 import {Footer} from "./view/Footer.tsx";
 import {ListaDeProductos} from "./view/ListaDeProductos.tsx";
