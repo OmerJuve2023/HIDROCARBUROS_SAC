@@ -1,3 +1,4 @@
+import "../styles/list_products_styles.css"
 import {ListProducts} from "../service/ListProducts.ts";
 
 export function ListaDeProductos() {
@@ -9,11 +10,12 @@ export function ListaDeProductos() {
                         <img
                             src={producto.image}
                             alt={producto.name}
-                            className="card-img-top"
+                            className="card-image-container"
                         />
                         <div className="card-body">
-                            <h6 className="card-title">{producto.name}</h6>
-                            <br/>
+                            <div>
+                                <h6 className="custom-card-title">{producto.name}</h6>
+                            </div>
                             <div className="d-grid gap-2">
                                 <button className="btn btn-primary">
                                     Agregar
