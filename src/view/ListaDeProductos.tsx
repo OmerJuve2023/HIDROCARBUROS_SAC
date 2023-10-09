@@ -1,52 +1,43 @@
-import "../styles/list_products_styles.css"
+import "../styles/list_products_styles.css";
 import {ListProducts} from "../service/ListProducts.ts";
-import {useState} from "react";
+import {useEffect, useState} from "react";
+import SearchBar from "../Components/SearchBar.tsx";
+import ProductCard from "../Components/ProductCard.tsx";
+import {OrderUtils} from "../service/OrderUtils.ts";
 
 export function ListaDeProductos() {
 
-    const [selectedProducts, setSelectedProducts]
-        = useState<Product[]>([]);
+    const [selectedProducts, setSelectedProducts] = useState<Product[]>([]);
+    const [searchTerm, setSearchTerm] = useState<string>("");
 
-    const agregarProducto = (producto: Product) => {
-        // Verificar si el producto ya está en la lista
-        const productoExistente
-            = selectedProducts.find((p) => p.name === producto.name);
-
-        if (!productoExistente) {
-            // Solo agregar si no existe en la lista
-            const nuevaLista = [...selectedProducts, producto];
-            setSelectedProducts(nuevaLista);
-            // Almacenar la lista actualizada en el localStorage
-            localStorage.setItem('miLista', JSON.stringify(nuevaLista));
-        }else{
-            alert("ya has agregado este item a la lista")
+    useEffect(() => {
+        // Verificar si hay datos previos en el localStorage
+        const storedProducts = localStorage.getItem('listapedido');
+        if (storedProducts) {
+            setSelectedProducts(JSON.parse(storedProducts));
         }
+    }, []);
+    const agregarProducto = (producto: Product) => {
+        OrderUtils.agregarProducto(producto, selectedProducts, setSelectedProducts);
     };
+    // Filtrar la lista de productos según el término de búsqueda
+    const filteredProducts = ListProducts.filter((producto) =>
+        producto.name.toLowerCase().includes(searchTerm.toLowerCase())
+    );
 
     return (
         <>
-            {ListProducts.map((producto, index) => (
+            <SearchBar searchTerm={searchTerm}
+                       onSearchTermChange={setSearchTerm}/>
+            {filteredProducts.map((producto, index) => (
                 <div key={index} className="col-md-4 mb-4 col-6">
-                    <div className="card">
-                        <img
-                            src={producto.image}
-                            alt={producto.name}
-                            className="card-image-container"
-                        />
-                        <div className="card-body">
-                            <div>
-                                <h6 className="custom-card-title">{producto.name}</h6>
-                            </div>
-                            <div className="d-grid gap-2">
-                                <button className="btn btn-primary"
-                                        onClick={() => agregarProducto(producto)}>
-                                    Agregar
-                                </button>
-                            </div>
-                        </div>
-                    </div>
+                    <ProductCard
+                        name={producto.name}
+                        image={producto.image}
+                        onAddToCart={() => agregarProducto(producto)}
+                    />
                 </div>
             ))}
         </>
-    )
+    );
 }
