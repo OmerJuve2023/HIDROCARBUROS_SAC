@@ -1,0 +1,18 @@
+/* Estilos para el botón "Exportar a PDF" */
+.export-pdf-button {
+    background-color: #ff9800; /* Color de fondo naranja */
+    color: #fff; /* Color del texto blanco */
+    font-size: 1.25rem; /* Tamaño de fuente más grande */
+    border: none; /* Sin borde */
+    border-radius: 50px; /* Bordes redondeados para hacerlo circular */
+    padding: 10px 20px; /* Espaciado interno */
+    display: block; /* Hacer que el botón sea un bloque para centrarlo */
+    margin: 0 auto; /* Centrar horizontalmente */
+    cursor: pointer; /* Cambiar el cursor al interactuar con el botón */
+    transition: background-color 0.3s, transform 0.3s; /* Transiciones suaves */
+}
+
+.export-pdf-button:hover {
+    background-color: #ff7700; /* Cambiar el color de fondo en el hover */
+    transform: scale(1.05); /* Hacer que el botón se agrande ligeramente en el hover */
+}

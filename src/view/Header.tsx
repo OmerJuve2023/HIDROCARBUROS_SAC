@@ -1,23 +1,6 @@
+import "../styles/HeaderStyle.css"
 export function Header() {
 
-    /* useEffect(() => {
-         const handleHashChange = () => {
-             const location = window.location.hash;
-             const isPedidoRoute = location === '#/pedido';
-             setMostrarFormulario(!isPedidoRoute);
-         };
-
-         // Agregar un evento de escucha para el cambio de hash
-         window.addEventListener('hashchange', handleHashChange);
-
-         // Llamar a handleHashChange una vez para establecer el estado inicial
-         handleHashChange();
-
-         // Limpiar el evento de escucha cuando el componente se desmonta
-         return () => {
-             window.removeEventListener('hashchange', handleHashChange);
-         };
-     }, []);*/
     return (
         <>
             <header className="p-3 mb-3 border-bottom">
@@ -30,15 +13,11 @@ export function Header() {
                             <li><a href="#/" className="nav-link px-2 link-body-emphasis">Productos</a></li>
                             <li><a href="#/pedido" className="nav-link px-2 link-body-emphasis">Pedido</a></li>
                         </ul>
-                        {/*{mostrarFormulario&& (
-                            <form className="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
-                                <input type="search" className="form-control" placeholder="Buscar..."
-                                       aria-label="Buscar"/>
-                            </form>
-                        )}*/}
                     </div>
                 </div>
             </header>
+
+
         </>
     )
 }

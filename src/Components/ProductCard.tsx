@@ -1,16 +1,17 @@
 import React from 'react'
+import "../styles/ProductCardStyle.css"
 
 const ProductCard: React.FC<ProductCardProps> = ({name, image, onAddToCart}) => {
+
     return (
-        <div className="card">
-            <img src={image} alt={name} className="card-image-container"/>
+        <div className="card custom-card">
+            <img src={image} alt={name} className="card-image"/>
             <div className="card-body">
-                <h6 className="custom-card-title">{name}</h6>
-                <div className="d-grid gap-2">
-                    <button className="btn btn-primary" onClick={onAddToCart}>
-                        Agregar
-                    </button>
-                </div>
+                <h5 className="card-title">{name}</h5>
+                <p className="card-text"><br/></p>
+                <button className="btn btn-danger custom-btn" onClick={onAddToCart}>
+                    Agregar al carrito
+                </button>
             </div>
         </div>
     )

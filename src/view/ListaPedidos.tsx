@@ -3,7 +3,7 @@ import 'jspdf-autotable'
 import {Service} from "../service/Services.ts"
 import {GeneratePDF} from "../service/GeneratePDF.ts";
 import {RenderPedido} from "../Components/RenderPedido.tsx";
-
+import "../styles/ButtonPDFStyle.css"
 export function ListaPedidos() {
 
     const [selectedOrders, setSelectedOrders] =
@@ -78,14 +78,12 @@ export function ListaPedidos() {
                     agregarProducto,
                     eliminarProducto)
             )}
-            <div className="row">
-                <div className="col-md-12 text-center">
-                    <button className="btn btn-primary"
-                            onClick={generarPDF}>
-                        Exportar a PDF
-                    </button>
-                </div>
-            </div>
+            <button
+                className="export-pdf-button"
+                onClick={generarPDF}
+            >
+                Exportar a PDF
+            </button>
         </div>
     )
 }
