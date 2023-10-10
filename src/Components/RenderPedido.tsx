@@ -55,5 +55,5 @@ export function RenderPedido(
                 </div>
             </div>
         </div>
-    );
+    )
 }

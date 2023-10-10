@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 
 const ProductCard: React.FC<ProductCardProps> = ({name, image, onAddToCart}) => {
     return (
@@ -13,7 +13,6 @@ const ProductCard: React.FC<ProductCardProps> = ({name, image, onAddToCart}) => 
                 </div>
             </div>
         </div>
-    );
-};
-
-export default ProductCard;
+    )
+}
+export default ProductCard
