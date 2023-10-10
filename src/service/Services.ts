@@ -13,8 +13,11 @@ const obtenerListaDePedidos = (): Order[] => {
     }
     return []
 }
-
+const guardarPedidoEnLocalStorage = (listaDeOrders: Order[]) => {
+    localStorage.setItem('pedido', JSON.stringify(listaDeOrders))
+}
 export const Service = {
     obtenerListaDePedidos,
-    obtenerListaDeProductos
+    obtenerListaDeProductos,
+    guardarPedidoEnLocalStorage
 }
