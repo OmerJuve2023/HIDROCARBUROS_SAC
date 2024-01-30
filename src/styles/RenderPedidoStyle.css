@@ -1,0 +1,57 @@
+/* Estilos personalizados para la tarjeta de precompra */
+.precompra-card {
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.precompra-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos para la imagen de precompra */
+.precompra-image {
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 10px 0 0 10px; /* Bordes redondeados en la esquina superior izquierda */
+}
+
+/* Estilos personalizados para el contenido de la tarjeta de precompra */
+.precompra-title {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.precompra-quantity {
+    font-size: 0.875rem;
+    color: #666;
+}
+
+/* Estilos para los botones de precompra */
+.precompra-button {
+    font-size: 1rem;
+    padding: 8px 16px;
+    margin-right: 10px;
+}
+
+.precompra-delete-button {
+    font-size: 0.875rem;
+    margin-top: 10px;
+    color: #e8484e; /* Color rojo */
+    border: 1px solid #e8484e; /* Borde rojo */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 6px 12px; /* Espaciado interno */
+    display: inline-block; /* Hacer que el botón sea inline-block para centrarlo */
+    text-align: center; /* Alinear el texto al centro */
+    width: 100%; /* Ancho del 100% para llenar el espacio disponible */
+}
+
+.precompra-delete-button:hover {
+    background-color: #e8484e; /* Cambiar el fondo al color rojo en el hover */
+    color: #fff; /* Cambiar el color del texto a blanco en el hover */
+}

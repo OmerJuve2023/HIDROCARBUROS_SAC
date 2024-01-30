@@ -1,14 +1,50 @@
 export const ListProducts: Product[] = [
     {
-        name: "Producto 1",
-        image: "image1.jpg",
+        name: "martillo",
+        image: "src/assets/martillo.png",
     },
     {
-        name: "Producto 2",
-        image: "image2.jpg",
+        name: "taladro",
+        image: "src/assets/taladro.png",
     },
     {
-        name: "Producto 3",
-        image: "image3.jpg",
+        name: "brocas",
+        image: "src/assets/brocas.png",
+    },
+    {
+        name: "tuberias de perforación",
+        image: "src/assets/tuberia_perforacion.png",
+    },
+    {
+        name: "generador electrico",
+        image: "src/assets/generador_electrico.png",
+    },
+    {
+        name: "bombas centrifugadas",
+        image: "src/assets/bombas_centrifugadas.png",
+    },
+    {
+        name: "destornillador estrella",
+        image: "src/assets/destornillador_estrella.png",
+    },
+    {
+        name: "casco blanco",
+        image: "src/assets/casco_blanco.png",
+    },
+    {
+        name: "guante industrial",
+        image: "src/assets/guante_industrial.png",
+    },
+    {
+        name: "sincel",
+        image: "src/assets/sincel.png",
+    },
+    {
+        name: "alicate",
+        image: "src/assets/alicate.png",
+    },
+    {
+        name: "casco azul",
+        image: "src/assets/casco_azul.png",
     },
 ];
