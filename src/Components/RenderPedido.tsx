@@ -1,4 +1,5 @@
 import "../styles/RenderPedidoStyle.css"
+
 export function RenderPedido(
     order: Order,
     index: number,
