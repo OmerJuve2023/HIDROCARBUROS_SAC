@@ -1,50 +1,63 @@
+import alicate from "../assets/alicate.png";
+import brocas from "../assets/brocas.png";
+import bombas_centrifugadas from "../assets/bombas_centrifugadas.png";
+import casco_azul from "../assets/casco_azul.png";
+import casco_blanco from "../assets/casco_blanco.png";
+import destornillador_estrella from "../assets/destornillador_estrella.png";
+import generador_electrico from "../assets/generador_electrico.png";
+import guante_industrial from "../assets/guante_industrial.png";
+import martillo from "../assets/martillo.png";
+import sincel from "../assets/sincel.png";
+import taladro from "../assets/taladro.png";
+import tuberia_perforacion from "../assets/tuberia_perforacion.png";
+
 export const ListProducts: Product[] = [
     {
         name: "martillo",
-        image: "public/assets/alicate.png",
+        image: martillo,
     },
     {
         name: "taladro",
-        image: "public/assets/taladro.png",
+        image: taladro,
     },
     {
         name: "brocas",
-        image: "public/assets/brocas.png",
+        image: brocas,
     },
     {
         name: "tuberias de perforación",
-        image: "public/assets/tuberia_perforacion.png",
+        image: tuberia_perforacion,
     },
     {
         name: "generador electrico",
-        image: "public/assets/generador_electrico.png",
+        image: generador_electrico,
     },
     {
         name: "bombas centrifugadas",
-        image: "public/assets/bombas_centrifugadas.png",
+        image: bombas_centrifugadas,
     },
     {
         name: "destornillador estrella",
-        image: "public/assets/destornillador_estrella.png",
+        image: destornillador_estrella,
     },
     {
         name: "casco blanco",
-        image: "public/assets/casco_blanco.png",
+        image: casco_blanco,
     },
     {
         name: "guante industrial",
-        image: "public/assets/guante_industrial.png",
+        image: guante_industrial,
     },
     {
         name: "sincel",
-        image: "public/assets/sincel.png",
+        image: sincel,
     },
     {
         name: "alicate",
-        image: "public/assets/alicate.png",
+        image: alicate,
     },
     {
         name: "casco azul",
-        image: "public/assets/casco_azul.png",
+        image: casco_azul,
     },
 ];
