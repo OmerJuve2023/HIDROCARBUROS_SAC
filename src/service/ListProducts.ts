@@ -1,50 +1,50 @@
 export const ListProducts: Product[] = [
     {
         name: "martillo",
-        image: "src/assets/martillo.png",
+        image: "public/assets/alicate.png",
     },
     {
         name: "taladro",
-        image: "src/assets/taladro.png",
+        image: "public/assets/taladro.png",
     },
     {
         name: "brocas",
-        image: "src/assets/brocas.png",
+        image: "public/assets/brocas.png",
     },
     {
         name: "tuberias de perforación",
-        image: "src/assets/tuberia_perforacion.png",
+        image: "public/assets/tuberia_perforacion.png",
     },
     {
         name: "generador electrico",
-        image: "src/assets/generador_electrico.png",
+        image: "public/assets/generador_electrico.png",
     },
     {
         name: "bombas centrifugadas",
-        image: "src/assets/bombas_centrifugadas.png",
+        image: "public/assets/bombas_centrifugadas.png",
     },
     {
         name: "destornillador estrella",
-        image: "src/assets/destornillador_estrella.png",
+        image: "public/assets/destornillador_estrella.png",
     },
     {
         name: "casco blanco",
-        image: "src/assets/casco_blanco.png",
+        image: "public/assets/casco_blanco.png",
     },
     {
         name: "guante industrial",
-        image: "src/assets/guante_industrial.png",
+        image: "public/assets/guante_industrial.png",
     },
     {
         name: "sincel",
-        image: "src/assets/sincel.png",
+        image: "public/assets/sincel.png",
     },
     {
         name: "alicate",
-        image: "src/assets/alicate.png",
+        image: "public/assets/alicate.png",
     },
     {
         name: "casco azul",
-        image: "src/assets/casco_azul.png",
+        image: "public/assets/casco_azul.png",
     },
 ];
