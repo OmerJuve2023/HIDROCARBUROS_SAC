@@ -11,53 +11,53 @@ import guante_industrial from "../../public/assets/guante_industrial.png";
 import sincel from "../../public/assets/sincel.png";
 import casco_azul from "../../public/assets/casco_azul.png";
 
-export const ListProducts: { image: {}; name: string }[] = [
+export const ListProducts: { image: string; name: string }[] = [
     {
         name: "martillo",
-        image: martillo,
+        image: martillo as string,
     },
     {
         name: "taladro",
-        image: taladro,
+        image: taladro as string,
     },
     {
         name: "brocas",
-        image: brocas,
+        image: brocas as string,
     },
     {
         name: "tuberias de perforación",
-        image: tuberia_perforacion,
+        image: tuberia_perforacion as string,
     },
     {
         name: "generador electrico",
-        image: generador_electrico,
+        image: generador_electrico as string,
     },
     {
         name: "bombas centrifugadas",
-        image: bombas_centrifugadas,
+        image: bombas_centrifugadas as string,
     },
     {
         name: "destornillador estrella",
-        image: destornillador_estrella,
+        image: destornillador_estrella as string,
     },
     {
         name: "casco blanco",
-        image: casco_blanco,
+        image: casco_blanco as string,
     },
     {
         name: "guante industrial",
-        image: guante_industrial,
+        image: guante_industrial as string,
     },
     {
         name: "sincel",
-        image: sincel,
+        image: sincel as string,
     },
     {
         name: "alicate",
-        image: alicate,
+        image: alicate as string,
     },
     {
         name: "casco azul",
-        image: casco_azul,
+        image: casco_azul as string,
     },
 ];
