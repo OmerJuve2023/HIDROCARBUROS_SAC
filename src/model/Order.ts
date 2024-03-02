@@ -1,3 +1,3 @@
 interface Order extends Product {
-    quantity: number | null
+  quantity: number | null;
 }
